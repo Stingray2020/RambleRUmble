@@ -1,0 +1,36 @@
+#chest
+#dropbox
+
+#on collision chest produces several coins
+
+on collision touch(){
+
+	if(other(LeafManPawn) == null){
+		return 0;
+	}
+
+	if(opened){
+
+		return 0;
+	}else{
+		opened =true;
+		for(x=0;x<4;x++){
+			///create particle
+			///create coins
+			
+		}
+	}
+}
+
+#spikes that destory on hit with a explosion
+
+on touch(other){
+
+	if(other(explosion){
+		self destroy();
+	}
+
+}
+
+#coins that dont affect goal score or need to be collected in a row
+
